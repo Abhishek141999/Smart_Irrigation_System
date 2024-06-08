@@ -1,0 +1,18 @@
+Steps to setup RaspberryPI : 
+
+	-> First we installed RaspberryPI OS in the sd card.
+	-> Connected RaspberryPI with the laptop using LAN and gave it power supply.
+	-> Installed Putty.
+	-> Connected RaspberryPI with Putty by entering username and password.
+	-> Installed VNC Viewer to control RaspberryPI OS.
+
+Steps to connect Sensor : 
+	
+	-> Sensor which is used is DHT11 which measures temperature and Humidity
+	-> The sensor has three pins - Vcc, Data, Gnd
+	-> Connected Vcc of sensor to RaspberryPI 5V, Data of sensor to GPIO4 of RaspberryPI and Gnd of sensor to Gnd of RaspberryPI.
+
+Getting Readings from the Sensor : 
+
+	-> Installed Adafruit_DHT library
+	-> Wrote a program which uses read_retry function from the Adafruit_DHT module to read the inputs given by sensor.
